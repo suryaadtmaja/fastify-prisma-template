@@ -1,27 +1,30 @@
 {
-  "name": "fastify-prisma-template",
-	"scripts": {
-		"linfix": "standard --fix"
-	},
-  "version": "1.0.0",
-  "description": "fastify prisma",
-  "main": "index.js",
-  "repository": "https://github.com/filsuck/fastify-prisma-template",
-  "author": "filsuck",
-  "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "fastify": "^3.25.2",
-    "fastify-autoload": "^3.9.0",
-    "fastify-cli": "^2.14.0",
-    "fastify-plugin": "^3.0.0"
-  },
-  "devDependencies": {
-    "standard": "^16.0.4"
-  },
-	"standard": {
-		"ignore": [
-			"**/node_modules/**"
-		]
-	}
+ "name": "fastify-prisma-template",
+ "scripts": {
+  "linfix": "standard --fix"
+ },
+ "version": "1.0.0",
+ "description": "fastify prisma",
+ "main": "index.js",
+ "repository": "https://github.com/filsuck/fastify-prisma-template",
+ "author": "filsuck",
+ "license": "MIT",
+ "private": false,
+ "dependencies": {
+  "@prisma/client": "^3.7.0",
+  "dotenv-cli": "^4.1.1",
+  "fastify": "^3.25.2",
+  "fastify-autoload": "^3.9.0",
+  "fastify-cli": "^2.14.0",
+  "fastify-plugin": "^3.0.0"
+ },
+ "devDependencies": {
+  "prisma": "^3.7.0",
+  "standard": "^16.0.4"
+ },
+ "standard": {
+  "ignore": [
+   "**/node_modules/**"
+  ]
+ }
 }
