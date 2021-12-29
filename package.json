@@ -1,11 +1,13 @@
 {
  "name": "fastify-prisma-template",
  "scripts": {
-  "linfix": "standard --fix"
+	 "dev": "fastify start -w -l info -P -p 1337 src/app.js",
+  "lintfix": "standard --fix"
  },
  "version": "1.0.0",
  "description": "fastify prisma",
  "main": "index.js",
+ "type": "module",
  "repository": "https://github.com/filsuck/fastify-prisma-template",
  "author": "filsuck",
  "license": "MIT",
