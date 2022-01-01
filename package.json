@@ -1,7 +1,7 @@
 {
  "name": "fastify-prisma-template",
  "scripts": {
-	 "dev": "fastify start -w -l info -P -p 1337 src/app.js",
+  "dev": "fastify start -w -l info -P -p 1337 src/app.js",
   "lintfix": "standard --fix"
  },
  "version": "1.0.0",
@@ -14,6 +14,7 @@
  "private": false,
  "dependencies": {
   "@prisma/client": "^3.7.0",
+  "dotenv": "^10.0.0",
   "dotenv-cli": "^4.1.1",
   "fastify": "^3.25.2",
   "fastify-autoload": "^3.9.0",
@@ -21,6 +22,7 @@
   "fastify-plugin": "^3.0.0"
  },
  "devDependencies": {
+  "@vercel/node": "^1.12.1",
   "prisma": "^3.7.0",
   "standard": "^16.0.4"
  },
