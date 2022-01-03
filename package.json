@@ -2,7 +2,8 @@
  "name": "fastify-prisma-template",
  "scripts": {
   "dev": "fastify start -w -l info -P -p 1337 src/app.js",
-  "lintfix": "standard --fix"
+  "lintfix": "standard --fix",
+	"vercel-build": "prisma generate && prisma migrate deploy"
  },
  "version": "1.0.0",
  "description": "fastify prisma",
