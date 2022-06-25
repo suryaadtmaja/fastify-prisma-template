@@ -3,7 +3,8 @@
  "scripts": {
   "dev": "fastify start -w -l info -P -p 1337 src/app.js",
   "lintfix": "standard --fix",
-	"vercel-build": "prisma generate && prisma migrate deploy"
+  "vercel-build": "prisma generate && prisma migrate deploy",
+  "test": "tap --no-timeout \"tests/**/*.test.js\""
  },
  "version": "1.0.0",
  "description": "fastify prisma",
@@ -26,7 +27,8 @@
  "devDependencies": {
   "@vercel/node": "^1.12.1",
   "prisma": "^3.7.0",
-  "standard": "^16.0.4"
+  "standard": "^16.0.4",
+  "tap": "^16.3.0"
  },
  "standard": {
   "ignore": [
